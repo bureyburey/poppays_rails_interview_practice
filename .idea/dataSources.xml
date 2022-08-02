@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="poppays_rails_interview_practice_development@localhost" uuid="e4960b12-0a5f-4c13-b020-1a9f03158666">
+    <data-source source="LOCAL" name="Rails poppays_rails_interview_practice: development" uuid="663b1611-7509-4cc4-9d89-7450e735677f">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/poppays_rails_interview_practice_development</jdbc-url>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/poppays_rails_interview_practice_development</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="poppays_rails_interview_practice_test@localhost" uuid="33394f9b-1e90-41ee-bd23-231cfc5ec46b">
+    <data-source source="LOCAL" name="Rails poppays_rails_interview_practice: test" uuid="c20bc381-1d27-4d81-ac80-4d11d84f762c">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/poppays_rails_interview_practice_test</jdbc-url>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/poppays_rails_interview_practice_test</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="Rails poppays_rails_interview_practice: production" uuid="13c316e4-f9d4-4d65-9da5-517412586b62">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/poppays_rails_interview_practice_production</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
