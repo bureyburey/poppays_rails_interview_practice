@@ -14,9 +14,5 @@ class GigPayment < ApplicationRecord
     event :set_complete do
       transitions from: :pending, to: :complete, after: :after_complete
     end
-
-    # event :reopen do
-    #   transitions from: :complete, to: :pending
-    # end
   end
 end

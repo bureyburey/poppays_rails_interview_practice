@@ -21,8 +21,5 @@ class Gig < ApplicationRecord
     event :set_completed do
       transitions from: :applied, to: :completed, after: :after_completed
     end
-    # event :reopen do
-    #   transitions from :paid, to: :applied
-    # end
   end
 end
