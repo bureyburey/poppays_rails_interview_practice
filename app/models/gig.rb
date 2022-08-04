@@ -15,7 +15,7 @@ class Gig < ApplicationRecord
     state :accepted, :completed, :paid
 
     event :set_paid do
-      transitions from: [:applied, :accepted], to: :paid
+      transitions from: [:applied, :accepted, :completed], to: :paid
     end
 
     event :set_completed do
