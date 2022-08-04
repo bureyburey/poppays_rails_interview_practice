@@ -28,6 +28,7 @@
     </content>
     <orderEntry type="jdk" jdkName="RVM: ruby-2.6.9" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="aasm (v4.11.1, RVM: ruby-2.6.9) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actioncable (v6.0.5.1, RVM: ruby-2.6.9) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionmailbox (v6.0.5.1, RVM: ruby-2.6.9) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionmailer (v6.0.5.1, RVM: ruby-2.6.9) [gem]" level="application" />
@@ -103,6 +104,8 @@
   <component name="RailsGeneratorsCache">
     <option name="generators">
       <list>
+        <option value="aasm" />
+        <option value="active_record:aasm" />
         <option value="active_record:application_record" />
         <option value="active_record:migration" />
         <option value="active_record:model" />
@@ -116,6 +119,8 @@
         <option value="mailer" />
         <option value="migration" />
         <option value="model" />
+        <option value="mongoid:aasm" />
+        <option value="nobrainer:aasm" />
         <option value="resource" />
         <option value="rspec:channel" />
         <option value="rspec:controller" />
@@ -153,6 +158,8 @@
     </option>
     <option name="myGenerators">
       <list>
+        <option value="aasm" />
+        <option value="active_record:aasm" />
         <option value="active_record:application_record" />
         <option value="active_record:migration" />
         <option value="active_record:model" />
@@ -166,6 +173,8 @@
         <option value="mailer" />
         <option value="migration" />
         <option value="model" />
+        <option value="mongoid:aasm" />
+        <option value="nobrainer:aasm" />
         <option value="resource" />
         <option value="rspec:channel" />
         <option value="rspec:controller" />
@@ -361,9 +370,9 @@
               <RakeTaskImpl description="" fullCommand="db:truncate_all" id="truncate_all" />
             </subtasks>
           </RakeTaskImpl>
-          <RakeTaskImpl id="gig_payments_tasks">
+          <RakeTaskImpl id="gig_payments">
             <subtasks>
-              <RakeTaskImpl description="update gig payment state" fullCommand="gig_payments_tasks:update" id="update" />
+              <RakeTaskImpl description="TODO" fullCommand="gig_payments:update_task" id="update_task" />
             </subtasks>
           </RakeTaskImpl>
           <RakeTaskImpl id="log">

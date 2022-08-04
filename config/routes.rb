@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :gig_payments
+  resources :gig_payments do
+    put 'set_complete', :on => :member
+  end
   resources :gigs
   resources :creators do
     # https://stackoverflow.com/a/17200296

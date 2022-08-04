@@ -50,3 +50,5 @@ end
 gem 'rails_param'
 
 gem 'whenever', require: false
+
+gem 'aasm'
