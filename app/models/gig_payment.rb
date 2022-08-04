@@ -3,7 +3,7 @@ class GigPayment < ApplicationRecord
 
   include AASM
 
-  def after_close
+  def after_complete
     self.gig.set_paid!
   end
 
@@ -12,7 +12,7 @@ class GigPayment < ApplicationRecord
     state :complete
 
     event :set_complete do
-      transitions from: :pending, to: :complete, after: :after_close
+      transitions from: :pending, to: :complete, after: :after_complete
     end
 
     # event :reopen do

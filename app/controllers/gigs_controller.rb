@@ -41,4 +41,11 @@ class GigsController < ApplicationController
 
     render jsonapi: "Gig #{@gig.id} has been deleted"
   end
+
+  def set_completed
+    @gig = Gig.find(params[:id])
+    @gig.set_completed!
+
+    render jsonapi: @gig
+  end
 end
