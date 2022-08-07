@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::API
   include ActionController::MimeResponds
+  # https://www.lifewire.com/turn-on-airplay-on-a-mac-5188718
   # rescue_from ::ActionController::RoutingError, with: :routing_error
-  # rescue_from ::ActionController::RoutingError, with: lambda { |exception| routing_error(404, exception) }
   rescue_from ::ActiveRecord::RecordNotFound, with: :record_not_found
   rescue_from ::NameError, with: :error_occurred
   rescue_from ::AASM::InvalidTransition, with: :invalid_transition
@@ -15,12 +15,16 @@ class ApplicationController < ActionController::API
   end
 
   protected
+
   def record_not_found(exception)
     render json: { error: exception.message }.to_json, status: :not_found
   end
 
   def invalid_transition(exception)
-    render json: { error: exception.message, traces: exception.backtrace }.to_json, status: :bad_request
+    render json: {
+      error: exception.message,
+      # traces: exception.backtrace
+    }.to_json, status: :bad_request
   end
 
   def error_occurred(exception)
