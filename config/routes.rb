@@ -12,5 +12,9 @@ Rails.application.routes.draw do
     # GET creators/search
     get 'search', :on => :collection
   end
+
+  match '*path', :to => 'application#routing_error', via: :all
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
+
